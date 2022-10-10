@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from '../navLink/Link';
 import { Bars4Icon,XCircleIcon } from '@heroicons/react/24/solid';
-import logo from '../../images/logo.jpg';
+
 
 const Navbar = () => {
     const [open,setOpen] = useState(false)
@@ -35,9 +35,7 @@ const Navbar = () => {
                     }
                 </ul>
            </nav>
-           <div>
-           <img className="h-12 w-12" src={logo} alt="" />
-           </div>
+           
         </div>
     );
 };
