@@ -20,16 +20,15 @@ const Footer = () => {
             Brain Teasers
             </span>
           </a>
-          <div className="mt-6 lg:max-w-sm">
+          <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-gray-800">
-            Brain teasers are more than just simple puzzles and riddles.
-            <p className="mt-4 text-sm text-gray-800">
-            Technically, a brain teaser is a type of puzzle or brain game, often involving lateral thinking. That means to solve it, you'll have to use a creative, less straightforward thought process and the solution won't be right in front of you
-            </p>
+            Brain teasers are more than just simple puzzles and riddles
+            Technically, a brain teaser is a type of puzzle or brain game.
+            
             </p>
           </div>
         </div>
-        <div className="space-y-2 text-sm">
+        <div className="mt-6 space-y-2 text-sm">
           <p className="text-base font-bold tracking-wide  text-amber-700">
             Contacts
           </p>
@@ -69,7 +68,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className='mt-6'>
           <span className="text-base font-bold tracking-wide  text-amber-700">
             Social
           </span>

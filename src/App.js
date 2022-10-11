@@ -5,6 +5,7 @@ import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home/Home";
 import Layout from "./components/Layout/Layout";
 import Quiz from "./components/Quiz";
+import QuizQuestions from "./components/QuizQuestions";
 import Statistics from "./components/Statistics";
 
 const router = createBrowserRouter([
@@ -24,7 +25,12 @@ const router = createBrowserRouter([
       {
         path:'/quiz',
         loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
-        element:<Quiz></Quiz>
+        element:<Quiz></Quiz>,
+      },
+      {
+        path:'/quiz/:quizquestiosId',
+        loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizquestiosId}`),
+        element:<QuizQuestions></QuizQuestions>
       },
       {
         path:'/blog',
