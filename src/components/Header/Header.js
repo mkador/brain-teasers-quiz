@@ -47,7 +47,7 @@ const Header = () => {
               title='statistics'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
-              <p> Statistics</p>
+             Statistics
             </Link>
           </li>
           <li>
@@ -128,6 +128,16 @@ const Header = () => {
                 </div>
                 <nav>
                   <ul className='space-y-4'>
+                  <li>
+            <Link
+              to='/home'
+              aria-label='Home'
+              title='Home'
+              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+            >
+              Home
+            </Link>
+          </li>
                     <li>
                       <Link
                         to='/quiz'
