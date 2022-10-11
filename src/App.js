@@ -5,6 +5,7 @@ import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home/Home";
 import Layout from "./components/Layout/Layout";
 import Quiz from "./components/Quiz";
+import Statistics from "./components/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path:'/blog',
         element:<Blog></Blog>,
+      },
+      {
+        path:'/statistics',
+        element: <Statistics></Statistics>
       },
     ]
   },
