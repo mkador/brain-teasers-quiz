@@ -36,7 +36,7 @@ const About = () => {
           </span>{' '}
           Others Activities
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-amber-900 md:text-lg">
         According to a recent survey done by Ipsos, 48% of adults enjoy puzzles and puzzle games. 59% of people said that it was relaxing, and 42% felt that a puzzle was giving their brain a boost
         </p>
       </div>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
         <div className="flex flex-col justify-center">
           <div className="pb-4 mb-4 border-b">
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 font-semibold leading-5  text-amber-900">
             Problem solving skills Quiz
             </h6>
             <p className="text-sm text-gray-900">
@@ -68,7 +68,7 @@ const About = () => {
             </p>
           </div>
           <div className="pb-4 mb-4 border-b">
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 font-semibold leading-5  text-amber-900 ">
             Memory and reasoning Quiz
             </h6>
             <p className="text-sm text-gray-900">
@@ -76,7 +76,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 font-semibold leading-5  text-amber-900">
             Improving your mood Quiz
             </h6>
             <p className="text-sm text-gray-900">

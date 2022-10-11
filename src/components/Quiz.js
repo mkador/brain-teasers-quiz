@@ -7,7 +7,7 @@ const Quiz = () => {
     return (
     <div>
       {
-        quizs.data.map(quiz=><Quizpart
+        quizs?.data?.map(quiz=><Quizpart
         key={quiz.id}
         quiz={quiz}></Quizpart>)
       }

@@ -10,7 +10,7 @@ const Quizpart = ({quiz}) => {
           <img
             src={logo}
             alt=""
-            className="object-cover w-full lg:absolute h-80 lg:h-full"
+            className="bg-amber-900 object-cover w-full lg:absolute h-80 lg:h-full"
           />
           <svg
             className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
