@@ -9,6 +9,7 @@ const Option = ({option,showAnswer}) => {
                    <input onClick={()=>showAnswer(option)} type="radio" className="form-radio" name="option" value={option}/>
                     <span class="ml-2">{option}</span>
                 </label>
+                
          </div>
   
         </div>

@@ -8,8 +8,8 @@ const Answer = ({questionAndOption}) => {
     const {id,question,options,correctAnswer} = questionAndOption;
     const showAnswer =(answer)=>{
         if(correctAnswer===answer){
-          toast.success('Correct Answer)', {
-            position: "top-right",
+          toast.success('Correct Answer', {
+            position: "bottom-center",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -19,8 +19,8 @@ const Answer = ({questionAndOption}) => {
             });
         }
         else{
-          toast.success('Opss!!! Wrong Answer)', {
-            position: "top-right",
+          toast.error('Opss!!! Wrong Answer', {
+            position: "bottom-center",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -29,6 +29,19 @@ const Answer = ({questionAndOption}) => {
             progress: undefined,
             });
         }
+    }
+
+    const showCorrectAnswer=()=>{
+          toast.success(correctAnswer,{
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+                   
     }
     return (
         <div>
@@ -39,34 +52,17 @@ const Answer = ({questionAndOption}) => {
         </h6>
         <p className="text-base text-gray-700 md:text-lg sm:px-4">
         {
-            options.map((option,i)=> <Option key={i} option={option} showAnswer={showAnswer}></Option>)
+            options.map((option,i)=> <Option key={i} option={option} showAnswer={showAnswer} showCorrectAnswer={showCorrectAnswer}></Option>)
         }
         </p>
-        <a
-        //   href="/quiz"
-          aria-label="View"
-          className="inline-block mb-5 rounded-full sm:mx-auto"
-        >
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-            {/* <svg
-              className="w-12 h-12 text-deep-purple-accent-400"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
-            >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg> */}
-            <EyeIcon className="h-6 w-6 text-blue-500"/>
+          <div className="flex items-center justify-center w-16 h-16 mb-2 rounded-full bg-indigo-50">
+           <button onClick={()=>showCorrectAnswer(correctAnswer)}> <EyeIcon className="h-6 w-6 text-blue-500"/></button>
           </div>
-        </a>
+          
         <hr className="w-full my-8 border-gray-300" />
       </div>
     </div>
+
             
     <ToastContainer></ToastContainer>
        
