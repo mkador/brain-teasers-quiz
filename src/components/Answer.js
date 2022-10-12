@@ -1,15 +1,33 @@
 import React from 'react';
 import Option from './Option';
 import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Answer = ({questionAndOption}) => {
     const {id,question,options,correctAnswer} = questionAndOption;
     const showAnswer =(answer)=>{
         if(correctAnswer===answer){
-            console.log('Correct ans')
+          toast.success('Correct Answer)', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         }
         else{
-            console.log('wrong')
+          toast.success('Opss!!! Wrong Answer)', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         }
     }
     return (
@@ -50,7 +68,7 @@ const Answer = ({questionAndOption}) => {
       </div>
     </div>
             
-
+    <ToastContainer></ToastContainer>
        
         </div>
     );
